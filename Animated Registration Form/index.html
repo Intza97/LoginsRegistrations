@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+  <!--==================== METADATOS ====================-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="LoginsRegistrations">
+      <meta name="keywords" content="HTML-CSS-JS">
+      <meta name="author" content="Rocio Cuello">
+      
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!--==================== TITULO ====================-->
+      <title> LoginsRegistrations | Animated Registration Form</title>
+
+      <!--==================== ICONO DE PESTAÑA ====================-->
+      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+    </head>
+
+  <body>
+   <form action="">
+    <h2>Registro</h2>
+    <div class="inputBox">
+      <input type="text" required>
+      <label for="">Usuario</label>
+    </div> 
+    <div class="inputBox">
+      <input type="email" required>
+      <label for="">Email</label>
+    </div> 
+    <div class="inputBox">
+      <input type="password" required>
+      <label for="">Crear &nbsp; Contraseña</label>
+    </div>
+    <div class="inputBox">
+      <input type="password" required>
+      <label for="">Confirmar &nbsp; contraseña</label>
+    </div>
+    <div class="inputBox">
+    <input type="submit" value="Crear Cuenta">
+    </div>
+    <p>Tienes ya una cuenta? <a href="">Inicia Sesión</a></p>
+   </form>
+   <script>
+    document.querySelectorAll('label').forEach(label => {
+        label.innerHTML = label.innerText.split('').map((letters, i) => `<span style="transition-delay:${i * 50}ms">${letters}</span>`).join('');
+    });
+</script>
+
+  </body>
+</html>

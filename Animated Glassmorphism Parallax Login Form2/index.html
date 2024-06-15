@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+  <!--==================== METADATOS ====================-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="LoginsRegistrations">
+      <meta name="keywords" content="HTML-CSS-JS">
+      <meta name="author" content="Rocio Cuello">
+      
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!--==================== TITULO ====================-->
+      <title> LoginsRegistrations | Animated Glassmorphism Parallax Login</title>
+
+      <!--==================== ICONO DE PESTAÑA ====================-->
+      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+    <!-- Incluye la librería Parallax.js -->
+  
+    </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <div id="scene">
+          <div class="layer" data-depth-x="-0.5" data-depth-y="0.25"><img src="assets/img/moon.png" alt=""></div>
+          <div class="layer"  data-depth-x="0.15"><img src="assets/img/mountains02.png" alt=""></div>
+          <div class="layer" data-depth-x="0.25"><img src="assets/img/mountains01.png" alt=""></div>
+          <div class="layer" data-depth-x="-0.25"><img src="assets/img/road.png" alt=""></div>
+        </div>
+      </div>
+      <div class="login">
+        <h2>Login</h2>
+        <div class="inputBox">
+          <input type="text" placeholder="Usuario">
+        </div>
+        <div class="inputBox">
+         <input type="password" placeholder="Contraseña">
+        </div>
+        <div class="inputBox">
+       <input type="submit" value="Iniciar Sesión" id="btn">
+        </div>
+        <div class="group">
+          <a href="">Olvidaste tu contraseña</a>
+          <a href="">Registrate</a>
+        </div>
+      </div>
+    </section>
+        <!--==================== SCRIPT ====================--> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+      let scene=document.getElementById('scene');
+      let parallax= new Parallax(scene);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+  <!--==================== METADATOS ====================-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="LoginsRegistrations">
+      <meta name="keywords" content="HTML-CSS-JS">
+      <meta name="author" content="Rocio Cuello">
+      
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!--==================== TITULO ====================-->
+      <title> LoginsRegistrations | SignIn & SignUp Form</title>
+
+      <!--==================== ICONO DE PESTAÑA ====================-->
+      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+  <body>
+<div class="container" id="container">
+  <div class="form-container register-container">
+    <form action="">
+      <div class="header">Registro</div>
+      <div class="socials-wrapper">
+        <ul>
+          <li><a href="" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="" class="google"><i class="fa-brands fa-google"></i></a></li>
+        </ul>
+        <header>
+          <h2>Regístrese con Email</h2>
+        </header>
+      </div>
+      <div class="button-input-group">
+        <div class="group input-group">
+          <input type="text" placeholder="Usuario" required>
+        </div>
+        <div class="group input-group">
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="group input-group">
+          <input type="password" placeholder="Contraseña" required pattern=".{8,}">
+        </div>
+        <div class="group input-group">
+       <button class="signup-btn">Crear cuenta</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="form-container login-container">
+    <form action="">
+      <div class="header">Login</div>
+      <div class="socials-wrapper">
+        <ul>
+          <li><a href="" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="" class="twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="" class="google"><i class="fa-brands fa-google"></i></a></li>
+        </ul>
+        <header>
+          <h2>Inicia sesión con Email</h2>
+        </header>
+      </div>
+      <div class="button-input-group">
+        <div class="group input-group">
+          <input type="text" placeholder="Usuario" required>
+        </div>
+        <div class="group input-group">
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="group input-group">
+          <input type="password" placeholder="Contraseña" required pattern=".{8,}">
+        </div>
+        <div class="group input-group">
+       <button class="signin-btn">Inicia sesión</button>
+        </div>
+        <div class="form-link forgot">
+          <a href="" class="login-link">Olvidaste tu contraseña?</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+          <h2>Bienvenido de nuevo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, exercitationem!</p>
+          <div class="group button-group">
+            <button class="trigger" id="login">Login</button>
+          </div>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h2>Bienvenido</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, exercitationem!</p>
+          <div class="group button-group">
+            <button class="trigger" id="register">Registrate</button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+       <!--==================== script ====================-->
+    <script src="assets/js/script.js"></script>
+    
+  </body>
+</html>

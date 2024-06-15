@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+  <!--==================== METADATOS ====================-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="LoginsRegistrations">
+      <meta name="keywords" content="HTML-CSS-JS">
+      <meta name="author" content="Rocio Cuello">
+      
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!--==================== TITULO ====================-->
+      <title> LoginsRegistrations | Modern Login Form</title>
+
+      <!--==================== ICONO DE PESTAÑA ====================-->
+      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+    </head>
+
+  <body>
+   <div class="container">
+    <div class="box" style="--clr:#0f0;"></div>
+    <div class="box" style="--clr:#ff0;"></div>
+    <div class="box" style="--clr:#f00;"></div>
+    <div class="box" style="--clr:#f0f;"></div>
+    <div class="box" style="--clr:#0ff;"></div>
+    <div class="box" style="--clr:#0f0;"></div>
+    <div class="box" style="--clr:#ff0;"></div>
+    <div class="box" style="--clr:#f00;"></div>
+    <div class="box" style="--clr:#f0f;"></div>
+    <div class="box" style="--clr:#0ff;"></div>
+    <div class="box" style="--clr:#0f0;"></div>
+    <div class="box" style="--clr:#ff0;"></div>
+    <div class="box" style="--clr:#f00;"></div>
+    <div class="box" style="--clr:#f0f;"></div>
+    <div class="box" style="--clr:#0ff;"></div>
+   </div>
+   <div class="login">
+    <h2>Login</h2>
+    <div class="inputBox">
+      <input type="text" required>
+      <span>Usuario</span>
+    </div>
+    <div class="inputBox">
+      <input type="password" required>
+      <span>Contraseña</span>
+    </div>
+    <div class="inputBox">
+      <input type="submit" value="Iniciar Sesión">
+    </div>
+    <div class="group">
+      <a href="">Olvidaste tu contraseña</a>
+      <a href="">Registraste</a>
+    </div>
+   </div>
+       <!--==================== script ====================-->
+   <script>
+    let boxes =document.querySelectorAll('.box');
+    boxes.forEach(box=> {
+       box.onmousemove=function(e){
+        let x = e.pageX - box.offsetLeft;
+        let y = e.pageY - box.offsetTop;
+        box.style.setProperty('--x', x + 'px');
+        box.style.setProperty('--y', y + 'px');
+       }
+      })
+   </script>
+  </body>
+</html>
