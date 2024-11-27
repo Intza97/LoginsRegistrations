@@ -1,54 +1,52 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="es">
+<head>
   <!--==================== METADATOS ====================-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="LoginsRegistrations">
-      <meta name="keywords" content="HTML-CSS-JS">
-      <meta name="author" content="Rocio Cuello">
-      
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="LoginsRegistrations">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
 
-      <!--==================== TITULO ====================-->
-      <title> LoginsRegistrations | Animated Registration Form</title>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-      <!--==================== ICONO DE PESTAÑA ====================-->
-      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+  <!--==================== TITULO ====================-->
+  <title> LoginsRegistrations | Animated Registration Form</title>
 
-    </head>
-
-  <body>
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+</head>
+<body>
    <form action="">
-    <h2>Registro</h2>
-    <div class="inputBox">
-      <input type="text" required>
-      <label for="">Usuario</label>
-    </div> 
-    <div class="inputBox">
-      <input type="email" required>
-      <label for="">Email</label>
-    </div> 
-    <div class="inputBox">
-      <input type="password" required>
-      <label for="">Crear &nbsp; Contraseña</label>
-    </div>
-    <div class="inputBox">
-      <input type="password" required>
-      <label for="">Confirmar &nbsp; contraseña</label>
-    </div>
-    <div class="inputBox">
-    <input type="submit" value="Crear Cuenta">
-    </div>
-    <p>Tienes ya una cuenta? <a href="">Inicia Sesión</a></p>
+      <h2>Registro</h2>
+      <div class="inputBox">
+        <input type="text" required>
+        <label for="">Usuario</label>
+      </div> 
+      <div class="inputBox">
+        <input type="email" required>
+        <label for="">Email</label>
+      </div> 
+      <div class="inputBox">
+        <input type="password" required>
+        <label for="">Crear &nbsp; Contraseña</label>
+      </div>
+      <div class="inputBox">
+        <input type="password" required>
+        <label for="">Confirmar &nbsp; contraseña</label>
+      </div>
+      <div class="inputBox">
+      <input type="submit" value="Crear Cuenta">
+      </div>
+      <p>Tienes ya una cuenta? <a href="">Inicia Sesión</a></p>
    </form>
+    <!--==================== SCRIPT ====================-->
    <script>
     document.querySelectorAll('label').forEach(label => {
         label.innerHTML = label.innerText.split('').map((letters, i) => `<span style="transition-delay:${i * 50}ms">${letters}</span>`).join('');
     });
 </script>
-
-  </body>
+</body>
 </html>

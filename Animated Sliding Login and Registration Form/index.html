@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="es">
+<head>
   <!--==================== METADATOS ====================-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="LoginsRegistrations">
-      <meta name="keywords" content="HTML-CSS-JS">
-      <meta name="author" content="Rocio Cuello">
-      
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="LoginsRegistrations">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
 
-      <!--==================== TITULO ====================-->
-      <title> LoginsRegistrations | Animated Sliding Login and Registration Form</title>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-      <!--==================== ICONO DE PESTAÑA ====================-->
-      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+  <!--==================== TITULO ====================-->
+  <title> LoginsRegistrations | Animated Sliding Login and Registration Form</title>
 
-    </head>
-
-  <body>
-   <div class="container">
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+</head>
+<body>
+  <div class="container">
     <div class="blueBg">
       <div class="box signin">
         <h2>Tienes una cuenta?</h2>
@@ -53,23 +51,22 @@
         </form>
       </div>
     </div>
-   </div>
-       <!--==================== script ====================-->
-    <script>
-      const signinBtn=document.querySelector('.signinBtn');
-      const signupBtn=document.querySelector('.signupBtn');
-      const formBx=document.querySelector('.formBx');
-      const body=document.querySelector('body');
-      
-      signupBtn.onclick=function(){
-        formBx.classList.add('active')
-        body.classList.add('active')
-      }
-      signinBtn.onclick=function(){
-        formBx.classList.remove('active')
-        body.classList.remove('active')
-      }
-      
-    </script>
-  </body>
+  </div>
+  <!--==================== SCRIPT ====================-->
+  <script>
+    const signinBtn=document.querySelector('.signinBtn');
+    const signupBtn=document.querySelector('.signupBtn');
+    const formBx=document.querySelector('.formBx');
+    const body=document.querySelector('body');
+    
+    signupBtn.onclick=function(){
+      formBx.classList.add('active')
+      body.classList.add('active')
+    }
+    signinBtn.onclick=function(){
+      formBx.classList.remove('active')
+      body.classList.remove('active')
+    }     
+  </script>
+</body>
 </html>
